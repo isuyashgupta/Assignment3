@@ -1,182 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>
-        Build a Survey Form using HTML and CSS
-    </title>
+  <head>
+    <title>Build a Survey Form using HTML and CSS</title>
 
     <style>
-        /* Styling the Body element i.e. Color,
+      /* Styling the Body element i.e. Color,
         Font, Alignment */
-        body {
-            background: url(https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg);
-            background-repeat: no-repeat;
-            background-size: 1500px 1850px;
-            background-color: #05c46b;
-            font-family: Verdana;
-            text-align: center;
-        }
+      body {
+        background: url(https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px 1850px;
+        background-color: #05c46b;
+        font-family: Verdana;
+        text-align: center;
+      }
 
-        /* Styling the Form (Color, Padding, Shadow) */
-        form {
-            background-color: #fff;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px 20px;
-            box-shadow: 3px 6px 12px rgb(255, 255, 255);
-        }
+      /* Styling the Form (Color, Padding, Shadow) */
+      form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 3px 6px 12px rgb(255, 255, 255);
+      }
 
-        /* Styling form-control Class */
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
+      /* Styling form-control Class */
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
 
-        /* Styling form-control Label */
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
+      /* Styling form-control Label */
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
 
-        /* Styling form-control input,
+      /* Styling form-control input,
         select, textarea */
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
 
-        /* Styling form-control Radio
+      /* Styling form-control Radio
         button and Checkbox */
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
 
-        /* Styling Button */
-        button {
-            background-color: #05c46b;
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            font-size: 21px;
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
+      /* Styling Button */
+      button {
+        background-color: #05c46b;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-    <h1 style="color:white;font-size: 300%;">Survey Form</h1>
+  <body>
+    <h1 style="color: white; font-size: 300%">Survey Form</h1>
     <!-- Create Form -->
-    <form id="form" action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+    <form
+      id="form"
+      action="https://enw7u145b8im9.x.pipedream.net/"
+      method="post"
+    >
+      <!-- Details -->
+      <div class="form-control">
+        <label for="name" id="first_name">
+          <h3>Name</h3>
+        </label>
 
-        <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="first_name">
-                Name
-            </label>
-
-            <!-- Input Type Text -->
-            <input type="text" id="first_name" name="first_name" placeholder="Enter your firstname" required><br>
-            <div>
-                <input type="text" id="last_name" name="last_name" placeholder="Enter your lastname" required />
-            </div>
+        <!-- Input Type Text -->
+        <input
+          type="text"
+          id="first_name"
+          name="first_name"
+          placeholder="Enter your firstname"
+          required
+        /><br />
+        <div>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Enter your lastname"
+            required
+          />
         </div>
+      </div>
 
-        <div class="form-control">
-            <label for="address" id="_address">
-                Address
-            </label>
-            <div>
-                <input type="text" id="_street" placeholder="Street" required name="street" />
-            </div><br>
-            <div>
-                <input type="text" id="_city" placeholder="City" required name="city" />
-            </div><br>
-            <div>
-                <input type="text" id="_state" placeholder="State" required name="state" />
-            </div><br>
-            <div>
-                <input type="number" id="_pincode" placeholder="Pincode" required name="pincode" />
-            </div><br>
+      <div class="form-control">
+        <label for="address" id="_address">
+          <h3>Address</h3>
+        </label>
+        <div>
+          <input
+            type="text"
+            id="_street"
+            placeholder="Street"
+            required
+            name="street"
+          />
         </div>
+        <br />
+        <div>
+          <input
+            type="text"
+            id="_city"
+            placeholder="City"
+            required
+            name="city"
+          />
+        </div>
+        <br />
+        <div>
+          <input
+            type="text"
+            id="_state"
+            placeholder="State"
+            required
+            name="state"
+          />
+        </div>
+        <br />
+        <div>
+          <input
+            type="number"
+            id="_pincode"
+            placeholder="Pincode"
+            required
+            name="pincode"
+          />
+        </div>
+        <br />
+      </div>
 
-        <div class="form-control">
-            <label for="Contact" id="_Contact">
-                Contact Number
-            </label>
+      <div class="form-control">
+        <label for="Contact" id="_Contact">
+          <h3>Contact Number</h3>
+        </label>
 
-            <!-- Input Type Text -->
-            <input type="number" id="_Contact" placeholder="Contact No." required name="cotact_number" />
-        </div><br>
+        <!-- Input Type Text -->
+        <input
+          type="number"
+          id="_Contact"
+          placeholder="Contact No."
+          required
+          name="cotact_number"
+        />
+      </div>
 
-        <div class="form-control">
-            <label>
-                Quality Of Products Received
-            </label>
+      <div class="form-control">
+        <h3>Quality of product</h3>
+        <input
+          type="radio"
+          name="quality_of_products_received_rating"
+          id="Excellent"
+          value="Excellent"
+          required
+        />
 
-            <!-- Input Type Radio Button -->
-            <label for="Quality1">
-                <input type="radio" id="_Quatity" name="quality_of_product_received_rating" required>Excellent</input>
-            </label>
-            <label for="Quality2">
-                <input type="radio" id="_Quatity" name="quality_of_product_received_rating" required>Good</input>
-            </label>
-            <label for="Quality3">
-                <input type="radio" id="_Quatity" name="quality_of_product_received_rating" required>Bad</input>
-            </label>
-        </div><br>
+        <label for="Excellent">Excellent</label>
+        <input
+          type="radio"
+          name="quality_of_products_received_rating"
+          id="Good"
+          value="Good"
+          required
+        />
 
-        <div class="form-control">
-            <label>
-                Value For Money
-            </label>
+        <label for="Good">Good</label>
+        <input
+          type="radio"
+          name="quality_of_products_received_rating"
+          id="Bad"
+          value="Bad"
+          required
+        />
 
-            <!-- Input Type Radio Button -->
-            <label for="Money1">
-                <input type="radio" id="_Money" name="value_of_money_rating" required>Excellent</input>
-            </label>
-            <label for="Money2">
-                <input type="radio" id="_Money" name="value_of_money_rating" required>Good</input>
-            </label>
-            <label for="Money3">
-                <input type="radio" id="_Money" name="value_of_money_rating" required>Bad</input>
-            </label>
-        </div><br>
+        <label for="Bad">Bad</label>
+        <h3>Value of Money</h3>
+        <input
+          type="radio"
+          name="value_for_money_rating"
+          id="Excellent"
+          value="Excellent"
+          required
+        />
 
-        <div class="form-control">
-            <label>
-                Delivery
-            </label>
+        <label for="Excellent">Excellent</label>
+        <input
+          type="radio"
+          name="value_for_money_rating"
+          id="Good"
+          value="Good"
+          required
+        />
 
-            <!-- Input Type Radio Button -->
-            <label for="Delivery1">
-                <input type="radio" id="_Delivery" name="delivery_rating" required>Excellent</input>
-            </label>
-            <label for="Delivery2">
-                <input type="radio" id="_Delivery" name="delivery_rating" required>Good</input>
-            </label>
-            <label for="Delivery3">
-                <input type="radio" id="_Delivery" name="delivery_rating" required>Bad</input>
-            </label>
-        </div><br>
+        <label for="Good">Good</label>
+        <input
+          type="radio"
+          name="value_for_money_rating"
+          id="Bad"
+          value="Bad"
+          required
+        />
 
-        <button style="cursor: pointer;" type="submit" value="submit">
-            Submit
-        </button>
+        <label for="Bad">Bad</label>
+        
+        <h3>Delivery</h3>
+        <input
+          type="radio"
+          name="delivery_rating"
+          id="Excellent"
+          value="Excellent"
+          required
+        />
+
+        <label for="Excellent">Excellent</label>
+        <input
+          type="radio"
+          name="delivery_rating"
+          id="Good"
+          value="Good"
+          required
+        />
+
+        <label for="Good">Good</label>
+        <input
+          type="radio"
+          name="delivery_rating"
+          id="Bad"
+          value="Bad"
+          required
+        />
+        
+        <label for="Bad">Bad</label>
+      </div>
+      <br />
+
+      <button style="cursor: pointer" type="submit" value="submit">
+        Submit
+      </button>
     </form>
     <!--marquee class="blink" behavior="scroll" direction="right" scrollamount="12">  <strong><em> This is Assignment no. 2 done by Suyash Gupta (IT-C)</em></strong></marquee-->
-</body>
-
+  </body>
 </html>
